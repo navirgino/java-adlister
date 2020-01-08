@@ -11,9 +11,9 @@
     <title>Title</title>
 </head>
 <body>
-<nav>
-
-</nav>
+<div class="parallax-container">
+    <div class="parallax"><img src="images/parallax1.jpg"></div>
+</div>
 
 </body>
 </html>

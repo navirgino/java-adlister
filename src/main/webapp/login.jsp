@@ -14,11 +14,15 @@
     <title><%= "Login" %></title>
 </head>
 <body>
+
+
 <%@include file="partials/navbar.jsp" %>
 
 
 
 <h1>Welcome To The Site!</h1>
+
+
 <form action="./login.jsp" method="POST">
     <label for="username">Username: </label>
     <input id="username" type="text" name="username" placeholder="Username" required />
@@ -45,6 +49,8 @@
 <script>
     $(document).ready(function(){
         $(".dropdown-trigger").dropdown();
+        $('.parallax').parallax();
+
     });
 
 </script>
