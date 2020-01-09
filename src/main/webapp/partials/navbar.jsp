@@ -8,17 +8,9 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
-
+    <%@include file="links.jsp" %>
 </head>
 <body>
-<!--Import jQuery before materialize.js-->
-<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
 
 <!-- Dropdown Structure -->
 <ul id="dropdown1" class="dropdown-content">
@@ -39,20 +31,6 @@
     </div>
 </nav>
 
-
-
-
-<!--Import jQuery before materialize.js-->
-<script
-        src="https://code.jquery.com/jquery-3.4.1.js"
-        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-        crossorigin="anonymous"></script>
-<script type="text/javascript" src="js/materialize.min.js"></script>
-<script>
-    $(document).ready(function(){
-        $(".dropdown-trigger").dropdown();
-    });
-
-</script>
+<%@include file="scripts.jsp" %>
 </body>
 </html>

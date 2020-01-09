@@ -9,18 +9,22 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+<%--    <%@include file="partials/links.jsp" %>--%>
+
     <title><%= "Profile" %></title>
 </head>
 <body>
-<%--<c:if test="${empty param.username || param.username == ''}">--%>
-<%--    <c:redirect url="./login.jsp">--%>
-<%--        <c:param name="username" value="${param.username}">Username:</c:param>--%>
-<%--        <c:param name="password" value="${param.password}">Password:</c:param>--%>
-<%--    </c:redirect>--%>
-<%--</c:if>--%>
-</body>
-<h1>My profile</h1>
+
+<%@include file="partials/navbar.jsp" %>
+
+<div class="joke">
+
+</div>
 
 
+<script src="./js/chuckapi.js"></script>
+
 </body>
+
+
 </html>
