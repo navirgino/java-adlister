@@ -8,9 +8,10 @@ import java.util.List;
 
 @WebServlet(urlPatterns = "/ads")
 public class ShowAdsServlet extends HttpServlet {
-
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+    protected void doGet(HttpServletRequest req, HttpServletResponse res)
+            throws ServletException, IOException
+    {
         Ads adsDao = DaoFactory.getAdsDao();
         List<Ad> ads = adsDao.all();
 
