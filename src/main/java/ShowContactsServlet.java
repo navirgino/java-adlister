@@ -24,4 +24,5 @@ public class ShowContactsServlet extends HttpServlet {
         req.setAttribute("contacts", contacts);
         req.getRequestDispatcher("/contacts/index.jsp").forward(req, res);
     }
+
 }

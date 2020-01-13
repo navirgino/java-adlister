@@ -18,14 +18,13 @@ public class DeleteContactServlet extends HttpServlet
             throws ServletException, IOException
 
     {
-        Contacts contactsDao = DaoFactory.getContactsDao();
 
-        String id = req.getParameter("id");
+        long id = Long.parseLong(req.getParameter("id"));
 
-        long idNum = Long.parseLong(id);
-
-        contactsDao.deleteContactById(idNum);
+        DaoFactory.getContactsDao().deleteContactById(id);
+        res.sendRedirect("/contacts");
 
 
     }
+
 }
